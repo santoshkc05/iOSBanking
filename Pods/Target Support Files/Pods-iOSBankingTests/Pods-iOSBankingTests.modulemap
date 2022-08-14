@@ -1,0 +1,6 @@
+framework module Pods_iOSBankingTests {
+  umbrella header "Pods-iOSBankingTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

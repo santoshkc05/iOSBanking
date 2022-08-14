@@ -1,0 +1,1251 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		186E8DE7054ABD2F48F8FA02 /* Pods_iOSBankingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBB6A5DF0D682973517218A /* Pods_iOSBankingTests.framework */; };
+		54722E62E3E2D0B0ACFFB8A7 /* Pods_iOSBanking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C1F6DC613678D2F8AC08AC3 /* Pods_iOSBanking.framework */; };
+		91490F0B229A47CBF47FD78A /* Pods_iOSBanking_iOSBankingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EF16726CC5FA7BCA3C9D07 /* Pods_iOSBanking_iOSBankingUITests.framework */; };
+		F8BA06B128A23576006E85CF /* iOSBankingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA06B028A23576006E85CF /* iOSBankingApp.swift */; };
+		F8BA06B328A23576006E85CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA06B228A23576006E85CF /* ContentView.swift */; };
+		F8BA06B528A23578006E85CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8BA06B428A23578006E85CF /* Assets.xcassets */; };
+		F8BA06B828A23578006E85CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8BA06B728A23578006E85CF /* Preview Assets.xcassets */; };
+		F8BA06C228A23578006E85CF /* iOSBankingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA06C128A23578006E85CF /* iOSBankingTests.swift */; };
+		F8BA06CC28A23578006E85CF /* iOSBankingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA06CB28A23578006E85CF /* iOSBankingUITests.swift */; };
+		F8BA06CE28A23578006E85CF /* iOSBankingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA06CD28A23578006E85CF /* iOSBankingUITestsLaunchTests.swift */; };
+		F8BA06E128A2361E006E85CF /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA06E028A2361E006E85CF /* Color+Extension.swift */; };
+		F8BA06E328A2376F006E85CF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA06E228A2376F006E85CF /* Constants.swift */; };
+		F8BA06E828A238A1006E85CF /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA06E728A238A1006E85CF /* DashboardView.swift */; };
+		F8BA06EA28A238B3006E85CF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA06E928A238B3006E85CF /* LoginView.swift */; };
+		F8BA06F028A2409D006E85CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8BA06EF28A2409D006E85CF /* GoogleService-Info.plist */; };
+		F8BA06F928A24613006E85CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA06F828A24613006E85CF /* AppDelegate.swift */; };
+		F8BA06FC28A24839006E85CF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F8BA06FB28A24839006E85CF /* FirebaseAuth */; };
+		F8BA06FE28A24839006E85CF /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = F8BA06FD28A24839006E85CF /* FirebaseAuthCombine-Community */; };
+		F8BA070028A24839006E85CF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F8BA06FF28A24839006E85CF /* FirebaseFirestore */; };
+		F8BA070228A24839006E85CF /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = F8BA070128A24839006E85CF /* FirebaseFirestoreCombine-Community */; };
+		F8BA070428A24839006E85CF /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F8BA070328A24839006E85CF /* FirebaseFirestoreSwift */; };
+		F8BA070628A25139006E85CF /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA070528A25139006E85CF /* AppUser.swift */; };
+		F8BA070D28A2586A006E85CF /* FirebaseEmailAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA070C28A2586A006E85CF /* FirebaseEmailAuthenticator.swift */; };
+		F8BA070F28A264B1006E85CF /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA070E28A264B1006E85CF /* AppError.swift */; };
+		F8BA071128A269E3006E85CF /* FirebaseRegisterUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA071028A269E3006E85CF /* FirebaseRegisterUserRepository.swift */; };
+		F8BA071328A27076006E85CF /* UserRegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA071228A27076006E85CF /* UserRegisterViewModel.swift */; };
+		F8BA071528A272F2006E85CF /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA071428A272F2006E85CF /* BaseViewModel.swift */; };
+		F8BA071728A2753F006E85CF /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA071628A2753F006E85CF /* SessionManager.swift */; };
+		F8BA071928A278F3006E85CF /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA071828A278F3006E85CF /* String+Extension.swift */; };
+		F8BA071B28A27DCE006E85CF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA071A28A27DCE006E85CF /* LoginViewModel.swift */; };
+		F8BA072328A28CB3006E85CF /* ForgotPasswordRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA072228A28CB3006E85CF /* ForgotPasswordRepository.swift */; };
+		F8BA072528A28CCB006E85CF /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA072428A28CCB006E85CF /* ForgotPasswordViewModel.swift */; };
+		F8BA072F28A3A615006E85CF /* MockAuthDataResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA072E28A3A615006E85CF /* MockAuthDataResult.swift */; };
+		F8BA073128A3A780006E85CF /* MockRegisterAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA073028A3A780006E85CF /* MockRegisterAuth.swift */; };
+		F8BA073328A3A901006E85CF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA073228A3A901006E85CF /* Extensions.swift */; };
+		F8BA073528A3AADA006E85CF /* App+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA073428A3AADA006E85CF /* App+Injection.swift */; };
+		F8BA073828A3B269006E85CF /* Resolver+XCTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA073728A3B269006E85CF /* Resolver+XCTest.swift */; };
+		F8BA073A28A3B419006E85CF /* FirebaseRegisterRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA073928A3B419006E85CF /* FirebaseRegisterRepositoryTests.swift */; };
+		F8BA073D28A3DA2C006E85CF /* BaseXCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA073C28A3DA2C006E85CF /* BaseXCTestCase.swift */; };
+		F8BA074028A3FB98006E85CF /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA073F28A3FB98006E85CF /* Util.swift */; };
+		F8BA074528A40821006E85CF /* MockLoginAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA074428A40821006E85CF /* MockLoginAuth.swift */; };
+		F8BA074B28A40D8B006E85CF /* MockForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA074A28A40D8B006E85CF /* MockForgotPassword.swift */; };
+		F8BA074D28A40E87006E85CF /* ForgotPasswordRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA074C28A40E87006E85CF /* ForgotPasswordRepositoryTests.swift */; };
+		F8BA074F28A41245006E85CF /* FirebaseEmailAuthenticatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA074E28A41245006E85CF /* FirebaseEmailAuthenticatorTests.swift */; };
+		F8BA075228A5351D006E85CF /* UserRegisterViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA075128A5351D006E85CF /* UserRegisterViewModelTests.swift */; };
+		F8BA075428A544EA006E85CF /* MockFirebaseRegisterUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA075328A544EA006E85CF /* MockFirebaseRegisterUserRepository.swift */; };
+		F8BA075628A54526006E85CF /* MockSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA075528A54526006E85CF /* MockSessionManager.swift */; };
+		F8BA075928A54626006E85CF /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA075828A54626006E85CF /* LoginViewModelTests.swift */; };
+		F8BA075B28A5498D006E85CF /* MockFirebaseEmailAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA075A28A5498D006E85CF /* MockFirebaseEmailAuthenticator.swift */; };
+		F8BA075E28A549FA006E85CF /* ForgotPasswordViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA075D28A549FA006E85CF /* ForgotPasswordViewModelTests.swift */; };
+		F8BA076028A6BE50006E85CF /* BaseMockVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA075F28A6BE50006E85CF /* BaseMockVM.swift */; };
+		F8BA076628A7FD0B006E85CF /* MockForgetPasswordRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA076528A7FD0B006E85CF /* MockForgetPasswordRepository.swift */; };
+		F8BA076828A80713006E85CF /* Publisher+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA076728A80713006E85CF /* Publisher+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8BA06BE28A23578006E85CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8BA06A528A23576006E85CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8BA06AC28A23576006E85CF;
+			remoteInfo = iOSBanking;
+		};
+		F8BA06C828A23578006E85CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8BA06A528A23576006E85CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8BA06AC28A23576006E85CF;
+			remoteInfo = iOSBanking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07F7FFB7A490419BA76E9D25 /* Pods-iOSBanking-iOSBankingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSBanking-iOSBankingUITests.release.xcconfig"; path = "Target Support Files/Pods-iOSBanking-iOSBankingUITests/Pods-iOSBanking-iOSBankingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		12181E7E2CEEB420EC695851 /* Pods-iOSBanking-iOSBankingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSBanking-iOSBankingUITests.debug.xcconfig"; path = "Target Support Files/Pods-iOSBanking-iOSBankingUITests/Pods-iOSBanking-iOSBankingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3FBB6A5DF0D682973517218A /* Pods_iOSBankingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSBankingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BE0B729F1B6C959BB3B69FE /* Pods-iOSBankingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSBankingTests.debug.xcconfig"; path = "Target Support Files/Pods-iOSBankingTests/Pods-iOSBankingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A1156E24E24F2036BFABD1A /* Pods-iOSBankingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSBankingTests.release.xcconfig"; path = "Target Support Files/Pods-iOSBankingTests/Pods-iOSBankingTests.release.xcconfig"; sourceTree = "<group>"; };
+		5A857ABDC901EF7B95214E43 /* Pods-iOSBankingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSBankingUITests.debug.xcconfig"; path = "Target Support Files/Pods-iOSBankingUITests/Pods-iOSBankingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5C1F6DC613678D2F8AC08AC3 /* Pods_iOSBanking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSBanking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65EF16726CC5FA7BCA3C9D07 /* Pods_iOSBanking_iOSBankingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSBanking_iOSBankingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C56EA7E7710398E8244F892 /* Pods-iOSBankingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSBankingUITests.release.xcconfig"; path = "Target Support Files/Pods-iOSBankingUITests/Pods-iOSBankingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A64521DB7D796264C69224C8 /* Pods-iOSBanking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSBanking.debug.xcconfig"; path = "Target Support Files/Pods-iOSBanking/Pods-iOSBanking.debug.xcconfig"; sourceTree = "<group>"; };
+		CF3F93AB22DE739C9FC736B6 /* Pods-iOSBanking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSBanking.release.xcconfig"; path = "Target Support Files/Pods-iOSBanking/Pods-iOSBanking.release.xcconfig"; sourceTree = "<group>"; };
+		F8BA06AD28A23576006E85CF /* iOSBanking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSBanking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8BA06B028A23576006E85CF /* iOSBankingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSBankingApp.swift; sourceTree = "<group>"; };
+		F8BA06B228A23576006E85CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F8BA06B428A23578006E85CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8BA06B728A23578006E85CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F8BA06BD28A23578006E85CF /* iOSBankingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSBankingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8BA06C128A23578006E85CF /* iOSBankingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSBankingTests.swift; sourceTree = "<group>"; };
+		F8BA06C728A23578006E85CF /* iOSBankingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSBankingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8BA06CB28A23578006E85CF /* iOSBankingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSBankingUITests.swift; sourceTree = "<group>"; };
+		F8BA06CD28A23578006E85CF /* iOSBankingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSBankingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F8BA06E028A2361E006E85CF /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		F8BA06E228A2376F006E85CF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F8BA06E728A238A1006E85CF /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		F8BA06E928A238B3006E85CF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F8BA06EF28A2409D006E85CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F8BA06F828A24613006E85CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F8BA070528A25139006E85CF /* AppUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
+		F8BA070C28A2586A006E85CF /* FirebaseEmailAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseEmailAuthenticator.swift; sourceTree = "<group>"; };
+		F8BA070E28A264B1006E85CF /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		F8BA071028A269E3006E85CF /* FirebaseRegisterUserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRegisterUserRepository.swift; sourceTree = "<group>"; };
+		F8BA071228A27076006E85CF /* UserRegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegisterViewModel.swift; sourceTree = "<group>"; };
+		F8BA071428A272F2006E85CF /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		F8BA071628A2753F006E85CF /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		F8BA071828A278F3006E85CF /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		F8BA071A28A27DCE006E85CF /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F8BA072228A28CB3006E85CF /* ForgotPasswordRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordRepository.swift; sourceTree = "<group>"; };
+		F8BA072428A28CCB006E85CF /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
+		F8BA072E28A3A615006E85CF /* MockAuthDataResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthDataResult.swift; sourceTree = "<group>"; };
+		F8BA073028A3A780006E85CF /* MockRegisterAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRegisterAuth.swift; sourceTree = "<group>"; };
+		F8BA073228A3A901006E85CF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F8BA073428A3AADA006E85CF /* App+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Injection.swift"; sourceTree = "<group>"; };
+		F8BA073728A3B269006E85CF /* Resolver+XCTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver+XCTest.swift"; sourceTree = "<group>"; };
+		F8BA073928A3B419006E85CF /* FirebaseRegisterRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRegisterRepositoryTests.swift; sourceTree = "<group>"; };
+		F8BA073C28A3DA2C006E85CF /* BaseXCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseXCTestCase.swift; sourceTree = "<group>"; };
+		F8BA073F28A3FB98006E85CF /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		F8BA074428A40821006E85CF /* MockLoginAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginAuth.swift; sourceTree = "<group>"; };
+		F8BA074A28A40D8B006E85CF /* MockForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockForgotPassword.swift; sourceTree = "<group>"; };
+		F8BA074C28A40E87006E85CF /* ForgotPasswordRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordRepositoryTests.swift; sourceTree = "<group>"; };
+		F8BA074E28A41245006E85CF /* FirebaseEmailAuthenticatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseEmailAuthenticatorTests.swift; sourceTree = "<group>"; };
+		F8BA075128A5351D006E85CF /* UserRegisterViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegisterViewModelTests.swift; sourceTree = "<group>"; };
+		F8BA075328A544EA006E85CF /* MockFirebaseRegisterUserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFirebaseRegisterUserRepository.swift; sourceTree = "<group>"; };
+		F8BA075528A54526006E85CF /* MockSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSessionManager.swift; sourceTree = "<group>"; };
+		F8BA075828A54626006E85CF /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
+		F8BA075A28A5498D006E85CF /* MockFirebaseEmailAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFirebaseEmailAuthenticator.swift; sourceTree = "<group>"; };
+		F8BA075D28A549FA006E85CF /* ForgotPasswordViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModelTests.swift; sourceTree = "<group>"; };
+		F8BA075F28A6BE50006E85CF /* BaseMockVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMockVM.swift; sourceTree = "<group>"; };
+		F8BA076528A7FD0B006E85CF /* MockForgetPasswordRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockForgetPasswordRepository.swift; sourceTree = "<group>"; };
+		F8BA076728A80713006E85CF /* Publisher+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8BA06AA28A23576006E85CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54722E62E3E2D0B0ACFFB8A7 /* Pods_iOSBanking.framework in Frameworks */,
+				F8BA070028A24839006E85CF /* FirebaseFirestore in Frameworks */,
+				F8BA06FE28A24839006E85CF /* FirebaseAuthCombine-Community in Frameworks */,
+				F8BA070228A24839006E85CF /* FirebaseFirestoreCombine-Community in Frameworks */,
+				F8BA06FC28A24839006E85CF /* FirebaseAuth in Frameworks */,
+				F8BA070428A24839006E85CF /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8BA06BA28A23578006E85CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				186E8DE7054ABD2F48F8FA02 /* Pods_iOSBankingTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8BA06C428A23578006E85CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91490F0B229A47CBF47FD78A /* Pods_iOSBanking_iOSBankingUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFB4DD265DF0FED65D156A2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C1F6DC613678D2F8AC08AC3 /* Pods_iOSBanking.framework */,
+				3FBB6A5DF0D682973517218A /* Pods_iOSBankingTests.framework */,
+				65EF16726CC5FA7BCA3C9D07 /* Pods_iOSBanking_iOSBankingUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1F5B33961A25C6019CCB51B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A64521DB7D796264C69224C8 /* Pods-iOSBanking.debug.xcconfig */,
+				CF3F93AB22DE739C9FC736B6 /* Pods-iOSBanking.release.xcconfig */,
+				12181E7E2CEEB420EC695851 /* Pods-iOSBanking-iOSBankingUITests.debug.xcconfig */,
+				07F7FFB7A490419BA76E9D25 /* Pods-iOSBanking-iOSBankingUITests.release.xcconfig */,
+				4BE0B729F1B6C959BB3B69FE /* Pods-iOSBankingTests.debug.xcconfig */,
+				5A1156E24E24F2036BFABD1A /* Pods-iOSBankingTests.release.xcconfig */,
+				5A857ABDC901EF7B95214E43 /* Pods-iOSBankingUITests.debug.xcconfig */,
+				8C56EA7E7710398E8244F892 /* Pods-iOSBankingUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F8BA06A428A23576006E85CF = {
+			isa = PBXGroup;
+			children = (
+				F8BA06AF28A23576006E85CF /* iOSBanking */,
+				F8BA06C028A23578006E85CF /* iOSBankingTests */,
+				F8BA06CA28A23578006E85CF /* iOSBankingUITests */,
+				F8BA06AE28A23576006E85CF /* Products */,
+				F1F5B33961A25C6019CCB51B /* Pods */,
+				BFB4DD265DF0FED65D156A2A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F8BA06AE28A23576006E85CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA06AD28A23576006E85CF /* iOSBanking.app */,
+				F8BA06BD28A23578006E85CF /* iOSBankingTests.xctest */,
+				F8BA06C728A23578006E85CF /* iOSBankingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8BA06AF28A23576006E85CF /* iOSBanking */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA06DE28A235AD006E85CF /* Injection */,
+				F8BA06DC28A23591006E85CF /* Utilities */,
+				F8BA06DB28A23589006E85CF /* Extensions */,
+				F8BA06DA28A23580006E85CF /* Base */,
+				F8BA06DD28A23598006E85CF /* Modules */,
+				F8BA06F728A245ED006E85CF /* Resources */,
+				F8BA06F628A245CD006E85CF /* App */,
+				F8BA06B628A23578006E85CF /* Preview Content */,
+			);
+			path = iOSBanking;
+			sourceTree = "<group>";
+		};
+		F8BA06B628A23578006E85CF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA06B728A23578006E85CF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F8BA06C028A23578006E85CF /* iOSBankingTests */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA073B28A3DA15006E85CF /* Base */,
+				F8BA073628A3B23E006E85CF /* Injection */,
+				F8BA073E28A3FB74006E85CF /* Utilities */,
+				F8BA072A28A3A58D006E85CF /* Modules */,
+				F8BA06C128A23578006E85CF /* iOSBankingTests.swift */,
+			);
+			path = iOSBankingTests;
+			sourceTree = "<group>";
+		};
+		F8BA06CA28A23578006E85CF /* iOSBankingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA06CB28A23578006E85CF /* iOSBankingUITests.swift */,
+				F8BA06CD28A23578006E85CF /* iOSBankingUITestsLaunchTests.swift */,
+			);
+			path = iOSBankingUITests;
+			sourceTree = "<group>";
+		};
+		F8BA06DA28A23580006E85CF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA071428A272F2006E85CF /* BaseViewModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F8BA06DB28A23589006E85CF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA06E028A2361E006E85CF /* Color+Extension.swift */,
+				F8BA071828A278F3006E85CF /* String+Extension.swift */,
+				F8BA076728A80713006E85CF /* Publisher+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F8BA06DC28A23591006E85CF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA06E228A2376F006E85CF /* Constants.swift */,
+				F8BA070E28A264B1006E85CF /* AppError.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F8BA06DD28A23598006E85CF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA06E428A23849006E85CF /* Dashboard */,
+				F8BA070728A25149006E85CF /* Auth */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F8BA06DE28A235AD006E85CF /* Injection */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA073428A3AADA006E85CF /* App+Injection.swift */,
+			);
+			path = Injection;
+			sourceTree = "<group>";
+		};
+		F8BA06DF28A235BB006E85CF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA06ED28A23AFF006E85CF /* Repository */,
+				F8BA06EC28A23ACC006E85CF /* ViewModel */,
+				F8BA06EE28A23B0B006E85CF /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F8BA06E428A23849006E85CF /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA06E728A238A1006E85CF /* DashboardView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		F8BA06EB28A23AC4006E85CF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA070528A25139006E85CF /* AppUser.swift */,
+				F8BA071628A2753F006E85CF /* SessionManager.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F8BA06EC28A23ACC006E85CF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA071A28A27DCE006E85CF /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F8BA06ED28A23AFF006E85CF /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA070C28A2586A006E85CF /* FirebaseEmailAuthenticator.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F8BA06EE28A23B0B006E85CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA06E928A238B3006E85CF /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F8BA06F128A24560006E85CF /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA06F328A24575006E85CF /* Repository */,
+				F8BA06F528A24587006E85CF /* ViewModel */,
+				F8BA06F428A24581006E85CF /* View */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		F8BA06F328A24575006E85CF /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA071028A269E3006E85CF /* FirebaseRegisterUserRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F8BA06F428A24581006E85CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F8BA06F528A24587006E85CF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA071228A27076006E85CF /* UserRegisterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F8BA06F628A245CD006E85CF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA06B028A23576006E85CF /* iOSBankingApp.swift */,
+				F8BA06EF28A2409D006E85CF /* GoogleService-Info.plist */,
+				F8BA06B228A23576006E85CF /* ContentView.swift */,
+				F8BA06F828A24613006E85CF /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F8BA06F728A245ED006E85CF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA06B428A23578006E85CF /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F8BA070728A25149006E85CF /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA06EB28A23AC4006E85CF /* Common */,
+				F8BA06F128A24560006E85CF /* Register */,
+				F8BA06DF28A235BB006E85CF /* Login */,
+				F8BA070828A251EE006E85CF /* ForgotPassword */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		F8BA070828A251EE006E85CF /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA071C28A27F99006E85CF /* Repository */,
+				F8BA071D28A27FA3006E85CF /* ViewModel */,
+				F8BA071E28A27FAC006E85CF /* View */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		F8BA071C28A27F99006E85CF /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA072228A28CB3006E85CF /* ForgotPasswordRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F8BA071D28A27FA3006E85CF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA072428A28CCB006E85CF /* ForgotPasswordViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F8BA071E28A27FAC006E85CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F8BA072A28A3A58D006E85CF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA072B28A3A59A006E85CF /* Auth */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F8BA072B28A3A59A006E85CF /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA074828A40D5B006E85CF /* ForgotPassword */,
+				F8BA074328A4080A006E85CF /* Login */,
+				F8BA072D28A3A5E4006E85CF /* Register */,
+				F8BA072C28A3A5B3006E85CF /* Common */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		F8BA072C28A3A5B3006E85CF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA072E28A3A615006E85CF /* MockAuthDataResult.swift */,
+				F8BA075528A54526006E85CF /* MockSessionManager.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F8BA072D28A3A5E4006E85CF /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA074628A40BFD006E85CF /* Repository */,
+				F8BA075028A534EB006E85CF /* ViewModel */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		F8BA073628A3B23E006E85CF /* Injection */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA073728A3B269006E85CF /* Resolver+XCTest.swift */,
+			);
+			path = Injection;
+			sourceTree = "<group>";
+		};
+		F8BA073B28A3DA15006E85CF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA073C28A3DA2C006E85CF /* BaseXCTestCase.swift */,
+				F8BA075F28A6BE50006E85CF /* BaseMockVM.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F8BA073E28A3FB74006E85CF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA073F28A3FB98006E85CF /* Util.swift */,
+				F8BA073228A3A901006E85CF /* Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F8BA074328A4080A006E85CF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA074728A40C28006E85CF /* Repository */,
+				F8BA075728A545E2006E85CF /* ViewModel */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F8BA074628A40BFD006E85CF /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA073028A3A780006E85CF /* MockRegisterAuth.swift */,
+				F8BA073928A3B419006E85CF /* FirebaseRegisterRepositoryTests.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F8BA074728A40C28006E85CF /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA074428A40821006E85CF /* MockLoginAuth.swift */,
+				F8BA074E28A41245006E85CF /* FirebaseEmailAuthenticatorTests.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F8BA074828A40D5B006E85CF /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA074928A40D69006E85CF /* Repository */,
+				F8BA075C28A549C4006E85CF /* ViewModel */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		F8BA074928A40D69006E85CF /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA074A28A40D8B006E85CF /* MockForgotPassword.swift */,
+				F8BA074C28A40E87006E85CF /* ForgotPasswordRepositoryTests.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F8BA075028A534EB006E85CF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA075128A5351D006E85CF /* UserRegisterViewModelTests.swift */,
+				F8BA075328A544EA006E85CF /* MockFirebaseRegisterUserRepository.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F8BA075728A545E2006E85CF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA075828A54626006E85CF /* LoginViewModelTests.swift */,
+				F8BA075A28A5498D006E85CF /* MockFirebaseEmailAuthenticator.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F8BA075C28A549C4006E85CF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA075D28A549FA006E85CF /* ForgotPasswordViewModelTests.swift */,
+				F8BA076528A7FD0B006E85CF /* MockForgetPasswordRepository.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8BA06AC28A23576006E85CF /* iOSBanking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8BA06D128A23578006E85CF /* Build configuration list for PBXNativeTarget "iOSBanking" */;
+			buildPhases = (
+				5F5F450A5DCEE9004EE77127 /* [CP] Check Pods Manifest.lock */,
+				F8BA06A928A23576006E85CF /* Sources */,
+				F8BA06AA28A23576006E85CF /* Frameworks */,
+				F8BA06AB28A23576006E85CF /* Resources */,
+				BB07FA03D429194EF101D40C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSBanking;
+			packageProductDependencies = (
+				F8BA06FB28A24839006E85CF /* FirebaseAuth */,
+				F8BA06FD28A24839006E85CF /* FirebaseAuthCombine-Community */,
+				F8BA06FF28A24839006E85CF /* FirebaseFirestore */,
+				F8BA070128A24839006E85CF /* FirebaseFirestoreCombine-Community */,
+				F8BA070328A24839006E85CF /* FirebaseFirestoreSwift */,
+			);
+			productName = iOSBanking;
+			productReference = F8BA06AD28A23576006E85CF /* iOSBanking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F8BA06BC28A23578006E85CF /* iOSBankingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8BA06D428A23578006E85CF /* Build configuration list for PBXNativeTarget "iOSBankingTests" */;
+			buildPhases = (
+				FA48CAE6831CCF78C46DD93D /* [CP] Check Pods Manifest.lock */,
+				F8BA06B928A23578006E85CF /* Sources */,
+				F8BA06BA28A23578006E85CF /* Frameworks */,
+				F8BA06BB28A23578006E85CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8BA06BF28A23578006E85CF /* PBXTargetDependency */,
+			);
+			name = iOSBankingTests;
+			productName = iOSBankingTests;
+			productReference = F8BA06BD28A23578006E85CF /* iOSBankingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F8BA06C628A23578006E85CF /* iOSBankingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8BA06D728A23578006E85CF /* Build configuration list for PBXNativeTarget "iOSBankingUITests" */;
+			buildPhases = (
+				0ABA5CD555232DEFC961A4B7 /* [CP] Check Pods Manifest.lock */,
+				F8BA06C328A23578006E85CF /* Sources */,
+				F8BA06C428A23578006E85CF /* Frameworks */,
+				F8BA06C528A23578006E85CF /* Resources */,
+				E3EE98868AA145AF9B34CEE6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8BA06C928A23578006E85CF /* PBXTargetDependency */,
+			);
+			name = iOSBankingUITests;
+			productName = iOSBankingUITests;
+			productReference = F8BA06C728A23578006E85CF /* iOSBankingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8BA06A528A23576006E85CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					F8BA06AC28A23576006E85CF = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					F8BA06BC28A23578006E85CF = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = F8BA06AC28A23576006E85CF;
+					};
+					F8BA06C628A23578006E85CF = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = F8BA06AC28A23576006E85CF;
+					};
+				};
+			};
+			buildConfigurationList = F8BA06A828A23576006E85CF /* Build configuration list for PBXProject "iOSBanking" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8BA06A428A23576006E85CF;
+			packageReferences = (
+				F8BA06FA28A24839006E85CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = F8BA06AE28A23576006E85CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8BA06AC28A23576006E85CF /* iOSBanking */,
+				F8BA06BC28A23578006E85CF /* iOSBankingTests */,
+				F8BA06C628A23578006E85CF /* iOSBankingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8BA06AB28A23576006E85CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8BA06B828A23578006E85CF /* Preview Assets.xcassets in Resources */,
+				F8BA06B528A23578006E85CF /* Assets.xcassets in Resources */,
+				F8BA06F028A2409D006E85CF /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8BA06BB28A23578006E85CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8BA06C528A23578006E85CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0ABA5CD555232DEFC961A4B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSBanking-iOSBankingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F5F450A5DCEE9004EE77127 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSBanking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB07FA03D429194EF101D40C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSBanking/Pods-iOSBanking-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSBanking/Pods-iOSBanking-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSBanking/Pods-iOSBanking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3EE98868AA145AF9B34CEE6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSBanking-iOSBankingUITests/Pods-iOSBanking-iOSBankingUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSBanking-iOSBankingUITests/Pods-iOSBanking-iOSBankingUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSBanking-iOSBankingUITests/Pods-iOSBanking-iOSBankingUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA48CAE6831CCF78C46DD93D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSBankingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8BA06A928A23576006E85CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8BA070D28A2586A006E85CF /* FirebaseEmailAuthenticator.swift in Sources */,
+				F8BA06EA28A238B3006E85CF /* LoginView.swift in Sources */,
+				F8BA070F28A264B1006E85CF /* AppError.swift in Sources */,
+				F8BA06B328A23576006E85CF /* ContentView.swift in Sources */,
+				F8BA071B28A27DCE006E85CF /* LoginViewModel.swift in Sources */,
+				F8BA06B128A23576006E85CF /* iOSBankingApp.swift in Sources */,
+				F8BA072528A28CCB006E85CF /* ForgotPasswordViewModel.swift in Sources */,
+				F8BA072328A28CB3006E85CF /* ForgotPasswordRepository.swift in Sources */,
+				F8BA071128A269E3006E85CF /* FirebaseRegisterUserRepository.swift in Sources */,
+				F8BA071728A2753F006E85CF /* SessionManager.swift in Sources */,
+				F8BA071328A27076006E85CF /* UserRegisterViewModel.swift in Sources */,
+				F8BA071528A272F2006E85CF /* BaseViewModel.swift in Sources */,
+				F8BA06E828A238A1006E85CF /* DashboardView.swift in Sources */,
+				F8BA070628A25139006E85CF /* AppUser.swift in Sources */,
+				F8BA076828A80713006E85CF /* Publisher+Extension.swift in Sources */,
+				F8BA06F928A24613006E85CF /* AppDelegate.swift in Sources */,
+				F8BA06E128A2361E006E85CF /* Color+Extension.swift in Sources */,
+				F8BA071928A278F3006E85CF /* String+Extension.swift in Sources */,
+				F8BA06E328A2376F006E85CF /* Constants.swift in Sources */,
+				F8BA073528A3AADA006E85CF /* App+Injection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8BA06B928A23578006E85CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8BA075428A544EA006E85CF /* MockFirebaseRegisterUserRepository.swift in Sources */,
+				F8BA076628A7FD0B006E85CF /* MockForgetPasswordRepository.swift in Sources */,
+				F8BA073328A3A901006E85CF /* Extensions.swift in Sources */,
+				F8BA074B28A40D8B006E85CF /* MockForgotPassword.swift in Sources */,
+				F8BA075228A5351D006E85CF /* UserRegisterViewModelTests.swift in Sources */,
+				F8BA072F28A3A615006E85CF /* MockAuthDataResult.swift in Sources */,
+				F8BA073D28A3DA2C006E85CF /* BaseXCTestCase.swift in Sources */,
+				F8BA075B28A5498D006E85CF /* MockFirebaseEmailAuthenticator.swift in Sources */,
+				F8BA074028A3FB98006E85CF /* Util.swift in Sources */,
+				F8BA073828A3B269006E85CF /* Resolver+XCTest.swift in Sources */,
+				F8BA073A28A3B419006E85CF /* FirebaseRegisterRepositoryTests.swift in Sources */,
+				F8BA074F28A41245006E85CF /* FirebaseEmailAuthenticatorTests.swift in Sources */,
+				F8BA074528A40821006E85CF /* MockLoginAuth.swift in Sources */,
+				F8BA074D28A40E87006E85CF /* ForgotPasswordRepositoryTests.swift in Sources */,
+				F8BA075928A54626006E85CF /* LoginViewModelTests.swift in Sources */,
+				F8BA076028A6BE50006E85CF /* BaseMockVM.swift in Sources */,
+				F8BA073128A3A780006E85CF /* MockRegisterAuth.swift in Sources */,
+				F8BA075628A54526006E85CF /* MockSessionManager.swift in Sources */,
+				F8BA075E28A549FA006E85CF /* ForgotPasswordViewModelTests.swift in Sources */,
+				F8BA06C228A23578006E85CF /* iOSBankingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8BA06C328A23578006E85CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8BA06CC28A23578006E85CF /* iOSBankingUITests.swift in Sources */,
+				F8BA06CE28A23578006E85CF /* iOSBankingUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8BA06BF28A23578006E85CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8BA06AC28A23576006E85CF /* iOSBanking */;
+			targetProxy = F8BA06BE28A23578006E85CF /* PBXContainerItemProxy */;
+		};
+		F8BA06C928A23578006E85CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8BA06AC28A23576006E85CF /* iOSBanking */;
+			targetProxy = F8BA06C828A23578006E85CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F8BA06CF28A23578006E85CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F8BA06D028A23578006E85CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8BA06D228A23578006E85CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A64521DB7D796264C69224C8 /* Pods-iOSBanking.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOSBanking/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.santoshkc.iOSBanking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8BA06D328A23578006E85CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF3F93AB22DE739C9FC736B6 /* Pods-iOSBanking.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOSBanking/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.santoshkc.iOSBanking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F8BA06D528A23578006E85CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BE0B729F1B6C959BB3B69FE /* Pods-iOSBankingTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.santoshkc.iOSBankingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSBanking.app/iOSBanking";
+			};
+			name = Debug;
+		};
+		F8BA06D628A23578006E85CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A1156E24E24F2036BFABD1A /* Pods-iOSBankingTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.santoshkc.iOSBankingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSBanking.app/iOSBanking";
+			};
+			name = Release;
+		};
+		F8BA06D828A23578006E85CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12181E7E2CEEB420EC695851 /* Pods-iOSBanking-iOSBankingUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.santoshkc.iOSBankingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iOSBanking;
+			};
+			name = Debug;
+		};
+		F8BA06D928A23578006E85CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07F7FFB7A490419BA76E9D25 /* Pods-iOSBanking-iOSBankingUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.santoshkc.iOSBankingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iOSBanking;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8BA06A828A23576006E85CF /* Build configuration list for PBXProject "iOSBanking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8BA06CF28A23578006E85CF /* Debug */,
+				F8BA06D028A23578006E85CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8BA06D128A23578006E85CF /* Build configuration list for PBXNativeTarget "iOSBanking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8BA06D228A23578006E85CF /* Debug */,
+				F8BA06D328A23578006E85CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8BA06D428A23578006E85CF /* Build configuration list for PBXNativeTarget "iOSBankingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8BA06D528A23578006E85CF /* Debug */,
+				F8BA06D628A23578006E85CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8BA06D728A23578006E85CF /* Build configuration list for PBXNativeTarget "iOSBankingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8BA06D828A23578006E85CF /* Debug */,
+				F8BA06D928A23578006E85CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F8BA06FA28A24839006E85CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F8BA06FB28A24839006E85CF /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8BA06FA28A24839006E85CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		F8BA06FD28A24839006E85CF /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8BA06FA28A24839006E85CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		F8BA06FF28A24839006E85CF /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8BA06FA28A24839006E85CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		F8BA070128A24839006E85CF /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8BA06FA28A24839006E85CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		F8BA070328A24839006E85CF /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8BA06FA28A24839006E85CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F8BA06A528A23576006E85CF /* Project object */;
+}
