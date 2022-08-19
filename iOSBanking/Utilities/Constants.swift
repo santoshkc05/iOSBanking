@@ -8,5 +8,7 @@
 import Foundation
 
 enum StorageKey: String {
-  case language, isLoggedIn, initialDataFetchFinished, accessToken, refreshToken, isOnboarded, shouldShowProfileSetupView
+  case language, isLoggedIn
 }
+
+let stripePublishableKey = "YOUR_KEY"

@@ -8,6 +8,7 @@
 import Foundation
 import Resolver
 import FirebaseAuth
+import Firebase
 
 extension Resolver: ResolverRegistering {
     
@@ -15,7 +16,10 @@ extension Resolver: ResolverRegistering {
         defaultScope = .graph
         
         //Firebase Auth
-//        register { Auth.auth() }
+        register { Auth.auth() }.implements(UserCreatable.self)
+        register { Auth.auth() }.implements(ResetPasswordSendable.self)
+        register { Auth.auth() }.implements(UserLoginable.self)
+        register { Firestore.firestore()}.implements(FireStoreStorable.self)
         
         // Register Module
         register { FirebaseRegisterUserRepositoryImpl() }.implements(FirebaseRegisterUserRepository.self)
@@ -28,5 +32,16 @@ extension Resolver: ResolverRegistering {
         //Forgot Password Module
         register { ForgotPasswordRepositoryImpl() }.implements(ForgotPasswordRepository.self)
         register { ForgotPasswordViewModel() }
+        
+        //Dashboard module
+        register { StripeRemoteRepositoryImpl() }.implements(StripeRemoteRepository.self)
+        register { ProductRepositoryImpl() }.implements(ProductRepository.self)
+        register { DashboardViewModel() }
+        
+        //Network Module
+        register { NetworkClient(session: NetworkManager.shared.session) }.implements(NetworkProvider.self)
+        
+        //SessionManager
+        register { SessionManagerImpl() }.implements(SessionManager.self)
     }
 }

@@ -15,7 +15,7 @@ struct iOSBankingApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .accentColor(Color.App.primaryColor)
+                .accentColor(Color(.label))
         }
     }
 }

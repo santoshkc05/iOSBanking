@@ -1,16 +1,43 @@
 PODS:
+  - Alamofire (5.6.2)
   - Resolver (1.5.0)
+  - Stripe (22.7.0):
+    - Stripe/Stripe3DS2 (= 22.7.0)
+    - StripeApplePay (= 22.7.0)
+    - StripeCore (= 22.7.0)
+    - StripeUICore (= 22.7.0)
+  - Stripe/Stripe3DS2 (22.7.0):
+    - StripeApplePay (= 22.7.0)
+    - StripeCore (= 22.7.0)
+    - StripeUICore (= 22.7.0)
+  - StripeApplePay (22.7.0):
+    - StripeCore (= 22.7.0)
+  - StripeCore (22.7.0)
+  - StripeUICore (22.7.0):
+    - StripeCore (= 22.7.0)
 
 DEPENDENCIES:
+  - Alamofire
   - Resolver
+  - Stripe
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - Resolver
+    - Stripe
+    - StripeApplePay
+    - StripeCore
+    - StripeUICore
 
 SPEC CHECKSUMS:
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
   Resolver: 68984624572763018fd8ec7b8e3e8df0e3b6bba5
+  Stripe: 464637e1fe036d69343c8b62f96d38c98efc4584
+  StripeApplePay: 19c54b75a272ec9d9b99f34cdec0a84cf64fad8c
+  StripeCore: 42478ef61de37f1b85a4e1ac9d61bcf776bd2e2f
+  StripeUICore: a8748e6c865f0b0e1e6bb767667f3b132977b033
 
-PODFILE CHECKSUM: 8a16ddcace07c91bc075f2ee4275a639fb6f1b28
+PODFILE CHECKSUM: 3517dba8f4c1f68f96f74252d72a137d9609c46e
 
 COCOAPODS: 1.11.3

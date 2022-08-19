@@ -7,6 +7,8 @@ target 'iOSBanking' do
 
   # Pods for iOSBanking
   pod "Resolver"
+  pod 'Stripe'
+  pod 'Alamofire'
 
   target 'iOSBankingTests' do
     inherit! :search_paths

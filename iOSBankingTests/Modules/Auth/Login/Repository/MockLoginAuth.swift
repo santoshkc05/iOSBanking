@@ -15,6 +15,11 @@ class MockLoginAuth: UserLoginable {
     var isError = false
     var email = ""
     var password = ""
+    private var uid: String?
+    
+    func setUID(uid: String) {
+        self.uid = uid
+    }
     
     func signIn(withEmail email: String, password: String) async throws -> AuthDataResult {
         self.email = email
@@ -23,6 +28,8 @@ class MockLoginAuth: UserLoginable {
             throw "Error"
         } else {
             let authDataResult: MockAuthDataResult = customInit()
+            authDataResult.user.email = email
+            authDataResult.user.uid = uid ?? ""
             return authDataResult
         }
     }

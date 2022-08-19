@@ -34,8 +34,8 @@ class BaseViewModel: ObservableObject, RequestingVM {
                 }
             case .authenticationFailed:
                 if showAlert {
-                    errorTitle = "Authentication Failed"
-                    errorBody = "Login failed. Please try again."
+                    errorTitle = "Login failed"
+                    errorBody = "Please try again."
                 }
             }
         } else {

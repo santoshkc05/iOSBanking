@@ -22,14 +22,16 @@ class FirebaseRegisterUserRepositoryImpl: FirebaseRegisterUserRepository {
     
     // Removed dependencies on outer infrastructures
     @Injected private var auth: UserCreatable
+    @Injected private var db: FireStoreStorable
     
     func register(withEmail email: String, password: String) async -> Result<AppUser, AppError> {
         do {
             let user = try await auth.createUser(withEmail: email, password: password).user
+            try await db.collection("users").document(user.uid).setData([ "email": user.email! ], merge: true)
             return Result.success(AppUser(id: user.uid, email: user.email!, photoURL: user.photoURL))
         } catch {
             print("Registration failed: \(error)")
-            return Result.failure(AppError.other("Registration Failed"))
+            return Result.failure(AppError.other(error.localizedDescription))
         }
     }
 }

@@ -13,7 +13,11 @@ class MockRegisterAuth: UserCreatable {
     var isError = false
     var email = ""
     var password = ""
+    private var uid: String?
     
+    func setUID(uid: String) {
+        self.uid = uid
+    }
     
     func createUser(withEmail email: String, password: String) async throws -> AuthDataResult {
         self.email = email
@@ -22,8 +26,9 @@ class MockRegisterAuth: UserCreatable {
             throw "Error"
         } else {
             let authDataResult: MockAuthDataResult = customInit()
+            authDataResult.user.email = email
+            authDataResult.user.uid = uid ?? ""
             return authDataResult
         }
     }
 }
-

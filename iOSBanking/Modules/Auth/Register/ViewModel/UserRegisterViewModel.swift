@@ -34,6 +34,7 @@ class UserRegisterViewModel: BaseViewModel {
     }
     
     // MARK: Register
+    @MainActor
     func register() async {
         isRequesting = true
         let result = await userRegisterRepository.register(withEmail: email, password: password)

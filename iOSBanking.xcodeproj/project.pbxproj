@@ -60,6 +60,32 @@
 		F8BA076028A6BE50006E85CF /* BaseMockVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA075F28A6BE50006E85CF /* BaseMockVM.swift */; };
 		F8BA076628A7FD0B006E85CF /* MockForgetPasswordRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA076528A7FD0B006E85CF /* MockForgetPasswordRepository.swift */; };
 		F8BA076828A80713006E85CF /* Publisher+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA076728A80713006E85CF /* Publisher+Extension.swift */; };
+		F8C94D6D28ACE37D00BDC721 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C94D6C28ACE37D00BDC721 /* NetworkManager.swift */; };
+		F8C94D6F28ACE3DE00BDC721 /* AuthIntercepter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C94D6E28ACE3DE00BDC721 /* AuthIntercepter.swift */; };
+		F8C94D7128ACE76A00BDC721 /* RequestInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C94D7028ACE76A00BDC721 /* RequestInfo.swift */; };
+		F8C94D7328ACE7BC00BDC721 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C94D7228ACE7BC00BDC721 /* NetworkClient.swift */; };
+		F8C94D7728ACEA8800BDC721 /* AppEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C94D7628ACEA8800BDC721 /* AppEndpoints.swift */; };
+		F8C94D7A28ACEDDA00BDC721 /* StripeRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C94D7928ACEDDA00BDC721 /* StripeRemoteRepository.swift */; };
+		F8C94D7D28ACEEAB00BDC721 /* CreateIntentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C94D7C28ACEEAB00BDC721 /* CreateIntentResponse.swift */; };
+		F8C94D7F28ACF1E400BDC721 /* PaymentMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C94D7E28ACF1E400BDC721 /* PaymentMethod.swift */; };
+		F8C94D8328ACF7A500BDC721 /* MockNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C94D8228ACF7A400BDC721 /* MockNetworkClient.swift */; };
+		F8C94D8528ACF7B600BDC721 /* StripeRemoteRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C94D8428ACF7B600BDC721 /* StripeRemoteRepositoryTests.swift */; };
+		F8C94D8B28AD099000BDC721 /* FireStoreStorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C94D8A28AD099000BDC721 /* FireStoreStorable.swift */; };
+		F8C94D9028ADF5A700BDC721 /* MockFireStoreDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C94D8F28ADF5A700BDC721 /* MockFireStoreDB.swift */; };
+		F8C94D9328AE075200BDC721 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C94D9228AE075200BDC721 /* DashboardViewModel.swift */; };
+		F8C94D9528AE1F1D00BDC721 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C94D9428AE1F1D00BDC721 /* Product.swift */; };
+		F8C94D9728AE1F5A00BDC721 /* ProductRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C94D9628AE1F5A00BDC721 /* ProductRepository.swift */; };
+		F8C94D9928AE22D400BDC721 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C94D9828AE22D400BDC721 /* Double+Extension.swift */; };
+		F8C94D9C28AE2F5E00BDC721 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C94D9B28AE2F5E00BDC721 /* ActivityIndicatorView.swift */; };
+		F8C94D9E28AE2FF900BDC721 /* ErrorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C94D9D28AE2FF900BDC721 /* ErrorPresenter.swift */; };
+		F8C94DA028AE303900BDC721 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C94D9F28AE303900BDC721 /* ButtonStyle.swift */; };
+		F8C94DA328AE309A00BDC721 /* SecureInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C94DA228AE309A00BDC721 /* SecureInputView.swift */; };
+		F8C94DA528AE318E00BDC721 /* EntryField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C94DA428AE318E00BDC721 /* EntryField.swift */; };
+		F8C94DA728AE38BA00BDC721 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C94DA628AE38BA00BDC721 /* ForgotPasswordView.swift */; };
+		F8C94DA928AE5A7A00BDC721 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C94DA828AE5A7A00BDC721 /* RegisterView.swift */; };
+		F8C94DAC28AE5EA900BDC721 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C94DAB28AE5EA900BDC721 /* CardView.swift */; };
+		F8C94DAE28AE6C0100BDC721 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C94DAD28AE6C0100BDC721 /* ProductView.swift */; };
+		F8C94DB028AE6D4600BDC721 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C94DAF28AE6D4600BDC721 /* Date+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +165,32 @@
 		F8BA075F28A6BE50006E85CF /* BaseMockVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMockVM.swift; sourceTree = "<group>"; };
 		F8BA076528A7FD0B006E85CF /* MockForgetPasswordRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockForgetPasswordRepository.swift; sourceTree = "<group>"; };
 		F8BA076728A80713006E85CF /* Publisher+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Extension.swift"; sourceTree = "<group>"; };
+		F8C94D6C28ACE37D00BDC721 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		F8C94D6E28ACE3DE00BDC721 /* AuthIntercepter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthIntercepter.swift; sourceTree = "<group>"; };
+		F8C94D7028ACE76A00BDC721 /* RequestInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestInfo.swift; sourceTree = "<group>"; };
+		F8C94D7228ACE7BC00BDC721 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		F8C94D7628ACEA8800BDC721 /* AppEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEndpoints.swift; sourceTree = "<group>"; };
+		F8C94D7928ACEDDA00BDC721 /* StripeRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeRemoteRepository.swift; sourceTree = "<group>"; };
+		F8C94D7C28ACEEAB00BDC721 /* CreateIntentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateIntentResponse.swift; sourceTree = "<group>"; };
+		F8C94D7E28ACF1E400BDC721 /* PaymentMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethod.swift; sourceTree = "<group>"; };
+		F8C94D8228ACF7A400BDC721 /* MockNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkClient.swift; sourceTree = "<group>"; };
+		F8C94D8428ACF7B600BDC721 /* StripeRemoteRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeRemoteRepositoryTests.swift; sourceTree = "<group>"; };
+		F8C94D8A28AD099000BDC721 /* FireStoreStorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireStoreStorable.swift; sourceTree = "<group>"; };
+		F8C94D8F28ADF5A700BDC721 /* MockFireStoreDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFireStoreDB.swift; sourceTree = "<group>"; };
+		F8C94D9228AE075200BDC721 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		F8C94D9428AE1F1D00BDC721 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		F8C94D9628AE1F5A00BDC721 /* ProductRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRepository.swift; sourceTree = "<group>"; };
+		F8C94D9828AE22D400BDC721 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		F8C94D9B28AE2F5E00BDC721 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		F8C94D9D28AE2FF900BDC721 /* ErrorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPresenter.swift; sourceTree = "<group>"; };
+		F8C94D9F28AE303900BDC721 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
+		F8C94DA228AE309A00BDC721 /* SecureInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureInputView.swift; sourceTree = "<group>"; };
+		F8C94DA428AE318E00BDC721 /* EntryField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryField.swift; sourceTree = "<group>"; };
+		F8C94DA628AE38BA00BDC721 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		F8C94DA828AE5A7A00BDC721 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		F8C94DAB28AE5EA900BDC721 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		F8C94DAD28AE6C0100BDC721 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		F8C94DAF28AE6D4600BDC721 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,10 +276,13 @@
 		F8BA06AF28A23576006E85CF /* iOSBanking */ = {
 			isa = PBXGroup;
 			children = (
+				F8C94D6B28ACDACB00BDC721 /* Network */,
 				F8BA06DE28A235AD006E85CF /* Injection */,
 				F8BA06DC28A23591006E85CF /* Utilities */,
 				F8BA06DB28A23589006E85CF /* Extensions */,
 				F8BA06DA28A23580006E85CF /* Base */,
+				F8C94D8928AD097500BDC721 /* Firebase */,
+				F8C94D9A28AE2F4B00BDC721 /* Views */,
 				F8BA06DD28A23598006E85CF /* Modules */,
 				F8BA06F728A245ED006E85CF /* Resources */,
 				F8BA06F628A245CD006E85CF /* App */,
@@ -247,6 +302,7 @@
 		F8BA06C028A23578006E85CF /* iOSBankingTests */ = {
 			isa = PBXGroup;
 			children = (
+				F8C94D8E28ADF56300BDC721 /* Mock */,
 				F8BA073B28A3DA15006E85CF /* Base */,
 				F8BA073628A3B23E006E85CF /* Injection */,
 				F8BA073E28A3FB74006E85CF /* Utilities */,
@@ -279,6 +335,8 @@
 				F8BA06E028A2361E006E85CF /* Color+Extension.swift */,
 				F8BA071828A278F3006E85CF /* String+Extension.swift */,
 				F8BA076728A80713006E85CF /* Publisher+Extension.swift */,
+				F8C94D9828AE22D400BDC721 /* Double+Extension.swift */,
+				F8C94DAF28AE6D4600BDC721 /* Date+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -322,6 +380,10 @@
 		F8BA06E428A23849006E85CF /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				F8C94DAA28AE5E9C00BDC721 /* Views */,
+				F8C94D7B28ACEEA300BDC721 /* Model */,
+				F8C94D7828ACED8300BDC721 /* Repository */,
+				F8C94D9128AE06FC00BDC721 /* ViewModel */,
 				F8BA06E728A238A1006E85CF /* DashboardView.swift */,
 			);
 			path = Dashboard;
@@ -381,6 +443,7 @@
 		F8BA06F428A24581006E85CF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F8C94DA828AE5A7A00BDC721 /* RegisterView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -452,6 +515,7 @@
 		F8BA071E28A27FAC006E85CF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F8C94DA628AE38BA00BDC721 /* ForgotPasswordView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -459,6 +523,7 @@
 		F8BA072A28A3A58D006E85CF /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F8C94D8028ACF76C00BDC721 /* Dashboard */,
 				F8BA072B28A3A59A006E85CF /* Auth */,
 			);
 			path = Modules;
@@ -589,6 +654,123 @@
 				F8BA076528A7FD0B006E85CF /* MockForgetPasswordRepository.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F8C94D6B28ACDACB00BDC721 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F8C94D7528ACEA6500BDC721 /* Helpers */,
+				F8C94D7428ACE9CE00BDC721 /* Endpoints */,
+				F8C94D7228ACE7BC00BDC721 /* NetworkClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F8C94D7428ACE9CE00BDC721 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				F8C94D7628ACEA8800BDC721 /* AppEndpoints.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		F8C94D7528ACEA6500BDC721 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F8C94D6C28ACE37D00BDC721 /* NetworkManager.swift */,
+				F8C94D6E28ACE3DE00BDC721 /* AuthIntercepter.swift */,
+				F8C94D7028ACE76A00BDC721 /* RequestInfo.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F8C94D7828ACED8300BDC721 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F8C94D7928ACEDDA00BDC721 /* StripeRemoteRepository.swift */,
+				F8C94D9628AE1F5A00BDC721 /* ProductRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F8C94D7B28ACEEA300BDC721 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8C94D7C28ACEEAB00BDC721 /* CreateIntentResponse.swift */,
+				F8C94D7E28ACF1E400BDC721 /* PaymentMethod.swift */,
+				F8C94D9428AE1F1D00BDC721 /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F8C94D8028ACF76C00BDC721 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				F8C94D8128ACF77D00BDC721 /* Repository */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		F8C94D8128ACF77D00BDC721 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F8C94D8228ACF7A400BDC721 /* MockNetworkClient.swift */,
+				F8C94D8428ACF7B600BDC721 /* StripeRemoteRepositoryTests.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F8C94D8928AD097500BDC721 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				F8C94D8A28AD099000BDC721 /* FireStoreStorable.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		F8C94D8E28ADF56300BDC721 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				F8C94D8F28ADF5A700BDC721 /* MockFireStoreDB.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		F8C94D9128AE06FC00BDC721 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F8C94D9228AE075200BDC721 /* DashboardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F8C94D9A28AE2F4B00BDC721 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F8C94DA128AE303E00BDC721 /* Style */,
+				F8C94D9B28AE2F5E00BDC721 /* ActivityIndicatorView.swift */,
+				F8C94D9D28AE2FF900BDC721 /* ErrorPresenter.swift */,
+				F8C94DA228AE309A00BDC721 /* SecureInputView.swift */,
+				F8C94DA428AE318E00BDC721 /* EntryField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F8C94DA128AE303E00BDC721 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				F8C94D9F28AE303900BDC721 /* ButtonStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		F8C94DAA28AE5E9C00BDC721 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F8C94DAB28AE5EA900BDC721 /* CardView.swift */,
+				F8C94DAD28AE6C0100BDC721 /* ProductView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -842,24 +1024,47 @@
 			files = (
 				F8BA070D28A2586A006E85CF /* FirebaseEmailAuthenticator.swift in Sources */,
 				F8BA06EA28A238B3006E85CF /* LoginView.swift in Sources */,
+				F8C94D7A28ACEDDA00BDC721 /* StripeRemoteRepository.swift in Sources */,
 				F8BA070F28A264B1006E85CF /* AppError.swift in Sources */,
+				F8C94D6D28ACE37D00BDC721 /* NetworkManager.swift in Sources */,
+				F8C94D9928AE22D400BDC721 /* Double+Extension.swift in Sources */,
 				F8BA06B328A23576006E85CF /* ContentView.swift in Sources */,
 				F8BA071B28A27DCE006E85CF /* LoginViewModel.swift in Sources */,
 				F8BA06B128A23576006E85CF /* iOSBankingApp.swift in Sources */,
+				F8C94D9528AE1F1D00BDC721 /* Product.swift in Sources */,
+				F8C94D6F28ACE3DE00BDC721 /* AuthIntercepter.swift in Sources */,
 				F8BA072528A28CCB006E85CF /* ForgotPasswordViewModel.swift in Sources */,
 				F8BA072328A28CB3006E85CF /* ForgotPasswordRepository.swift in Sources */,
 				F8BA071128A269E3006E85CF /* FirebaseRegisterUserRepository.swift in Sources */,
 				F8BA071728A2753F006E85CF /* SessionManager.swift in Sources */,
 				F8BA071328A27076006E85CF /* UserRegisterViewModel.swift in Sources */,
 				F8BA071528A272F2006E85CF /* BaseViewModel.swift in Sources */,
+				F8C94DA528AE318E00BDC721 /* EntryField.swift in Sources */,
+				F8C94D9728AE1F5A00BDC721 /* ProductRepository.swift in Sources */,
 				F8BA06E828A238A1006E85CF /* DashboardView.swift in Sources */,
+				F8C94D8B28AD099000BDC721 /* FireStoreStorable.swift in Sources */,
+				F8C94DA928AE5A7A00BDC721 /* RegisterView.swift in Sources */,
 				F8BA070628A25139006E85CF /* AppUser.swift in Sources */,
+				F8C94D9E28AE2FF900BDC721 /* ErrorPresenter.swift in Sources */,
+				F8C94D7F28ACF1E400BDC721 /* PaymentMethod.swift in Sources */,
+				F8C94DAC28AE5EA900BDC721 /* CardView.swift in Sources */,
 				F8BA076828A80713006E85CF /* Publisher+Extension.swift in Sources */,
+				F8C94DB028AE6D4600BDC721 /* Date+Extension.swift in Sources */,
+				F8C94DA328AE309A00BDC721 /* SecureInputView.swift in Sources */,
 				F8BA06F928A24613006E85CF /* AppDelegate.swift in Sources */,
+				F8C94D9328AE075200BDC721 /* DashboardViewModel.swift in Sources */,
 				F8BA06E128A2361E006E85CF /* Color+Extension.swift in Sources */,
+				F8C94DAE28AE6C0100BDC721 /* ProductView.swift in Sources */,
+				F8C94D7128ACE76A00BDC721 /* RequestInfo.swift in Sources */,
 				F8BA071928A278F3006E85CF /* String+Extension.swift in Sources */,
 				F8BA06E328A2376F006E85CF /* Constants.swift in Sources */,
 				F8BA073528A3AADA006E85CF /* App+Injection.swift in Sources */,
+				F8C94D7328ACE7BC00BDC721 /* NetworkClient.swift in Sources */,
+				F8C94DA728AE38BA00BDC721 /* ForgotPasswordView.swift in Sources */,
+				F8C94D7D28ACEEAB00BDC721 /* CreateIntentResponse.swift in Sources */,
+				F8C94DA028AE303900BDC721 /* ButtonStyle.swift in Sources */,
+				F8C94D7728ACEA8800BDC721 /* AppEndpoints.swift in Sources */,
+				F8C94D9C28AE2F5E00BDC721 /* ActivityIndicatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -870,6 +1075,7 @@
 				F8BA075428A544EA006E85CF /* MockFirebaseRegisterUserRepository.swift in Sources */,
 				F8BA076628A7FD0B006E85CF /* MockForgetPasswordRepository.swift in Sources */,
 				F8BA073328A3A901006E85CF /* Extensions.swift in Sources */,
+				F8C94D9028ADF5A700BDC721 /* MockFireStoreDB.swift in Sources */,
 				F8BA074B28A40D8B006E85CF /* MockForgotPassword.swift in Sources */,
 				F8BA075228A5351D006E85CF /* UserRegisterViewModelTests.swift in Sources */,
 				F8BA072F28A3A615006E85CF /* MockAuthDataResult.swift in Sources */,
@@ -885,7 +1091,9 @@
 				F8BA076028A6BE50006E85CF /* BaseMockVM.swift in Sources */,
 				F8BA073128A3A780006E85CF /* MockRegisterAuth.swift in Sources */,
 				F8BA075628A54526006E85CF /* MockSessionManager.swift in Sources */,
+				F8C94D8528ACF7B600BDC721 /* StripeRemoteRepositoryTests.swift in Sources */,
 				F8BA075E28A549FA006E85CF /* ForgotPasswordViewModelTests.swift in Sources */,
+				F8C94D8328ACF7A500BDC721 /* MockNetworkClient.swift in Sources */,
 				F8BA06C228A23578006E85CF /* iOSBankingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

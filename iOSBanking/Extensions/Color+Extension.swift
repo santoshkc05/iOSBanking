@@ -9,13 +9,7 @@ import SwiftUI
 
 extension Color {
   enum App {
-    static let primaryColor = Color("PrimaryColor")
-    static let lightGrayColor = Color("LightGray")
-    static let lighterGrayColor = Color("LighterGray")
-    static let secondaryColor = Color("SecondaryColor")
-    static let form = Color("Form")
-    static let placeHolderColor = Color(UIColor.placeholderText)
-    static let adaptiveWhite = Color("AdaptiveWhite")
-    static let pickerColor = Color("PickerColor")
+      static let primaryColor = Color(.systemBackground)
+      static let secondaryColor = Color(.label)
   }
 }

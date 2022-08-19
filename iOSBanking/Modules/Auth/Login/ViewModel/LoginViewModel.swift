@@ -30,6 +30,7 @@ class LoginViewModel: BaseViewModel {
     }
     
     // MARK: Login
+    @MainActor
     func login() async {
         isRequesting = true
         let result = await emailAuthenticator.signIn(withEmail: email, password: password)

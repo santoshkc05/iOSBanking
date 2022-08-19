@@ -14,6 +14,7 @@ class FirebaseRegisterRepositoryTests: BaseXCTestCase {
 
     var mockAuth: MockRegisterAuth!
     var sut: FirebaseRegisterUserRepositoryImpl!
+    var mockDB: MockFireStoreDB!
     
     override func setUp() {
         super.setUp()
@@ -21,13 +22,17 @@ class FirebaseRegisterRepositoryTests: BaseXCTestCase {
         // Register dependencies
         Resolver.mock.register{ FirebaseRegisterUserRepositoryImpl() }
         Resolver.mock.register { MockRegisterAuth() }.implements(UserCreatable.self)
+        Resolver.mock.register { MockFireStoreDB() }.implements(FireStoreStorable.self)
         
         sut = Resolver.mock.resolve(FirebaseRegisterUserRepositoryImpl.self)
         mockAuth = Resolver.mock.resolve(UserCreatable.self) as? MockRegisterAuth
+        mockDB = Resolver.mock.resolve(FireStoreStorable.self) as? MockFireStoreDB
     }
     
     override func tearDown() {
         sut = nil
+        mockDB = nil
+        mockAuth = nil
         
         super.tearDown()
     }
@@ -59,5 +64,20 @@ extension FirebaseRegisterRepositoryTests {
         mockAuth.isError = true
         let result = await sut.register(withEmail: testEmail, password: testPassword)
         XCTAssertTrue(result.isError)
+    }
+    
+    func testRegisterCorrectDataShouldBeStoredInFirestoreAfterSuccessFullRegister() async {
+        
+        let testEmail = "test2@gmail.com"
+        let testPassword = "strong123"
+        mockAuth.isError = false
+        mockAuth.setUID(uid: "testUUID")
+        
+        _ = await sut.register(withEmail: testEmail, password: testPassword)
+        
+        XCTAssertEqual(mockDB.collectionName, "users")
+        XCTAssertEqual(mockDB.documentPath, "testUUID")
+        XCTAssertTrue(mockDB.merge)
+        XCTAssertEqual(mockDB.storedData["email"] as! String, testEmail)
     }
 }

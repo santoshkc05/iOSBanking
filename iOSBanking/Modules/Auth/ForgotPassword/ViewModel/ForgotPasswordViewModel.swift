@@ -8,13 +8,13 @@
 import Foundation
 import Resolver
 
-
 class ForgotPasswordViewModel: BaseViewModel {
     @Published var email = ""
     @Published var isEmailSent = false
     
     @Injected var forgotPasswordRepository: ForgotPasswordRepository
     
+    @MainActor
     func sendResetLink() async {
         isRequesting = true
         let result = await forgotPasswordRepository.sendPasswordResetLink(to: email)
