@@ -20,7 +20,7 @@ Install the [docker](https://docs.docker.com/get-docker/) in your machine.
 
 [Backend Server](https://github.com/santoshkc05/stripe-springboot) is required for the stripe payment. To complete the payment features you need to run the backend server in your machine.
 
-[Create IOS project](https://firebase.google.com/docs/ios/setup) in the firebase console. You need to complete step 1, step 2 and step 3.
+[Create IOS project](https://firebase.google.com/docs/ios/setup) in the firebase console. You need to complete step 1, step 2 and step 3 of the mentioned document.
 
 Clone this project and hit following command from the project directory.
 
@@ -62,4 +62,5 @@ Then build and run the project.
 ## Tests
 
 The test coverage report of the current application is shown below. It is sorted by coverage percentage.
+
 ![Coverage](/Samples/coverage.png)
